@@ -1,0 +1,169 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header {
+    background-color: #005792;
+    color: #ffffff;
+    padding: 24px;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0 0px 0px rgba(0,0,0,0.1);
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    margin-left: 44px;
+    margin-top: 36px;
+}
+
+.nav-bar {
+    background: linear-gradient(90deg, #007acc 0%, #005792 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 10px;
+}
+
+.nav-links a:hover {
+    background-color: #e0e0e0;
+    color: #005792;
+    transform: translateY(-2px);
+}
+
+.login-button {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+    white-space: nowrap;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.login-button:hover {
+    background-color: #c33d2e;
+    transform: translateY(-2px);
+}
+
+.main-content {
+    padding: 20px;
+    background-color: #ffffff;
+    min-height: 400px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search-field {
+    padding: 15px;
+    width: 60%; /* Making the search box bigger */
+    border: 2px solid #007BFF; /* Adding a border */
+    border-right: none; /* Removing the right border to merge with the button */
+    border-radius: 15px 0 0 15px; /* Rounded corners on the left side */
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search-field:focus {
+    border-color: #0056b3;
+}
+
+.search-button {
+    padding: 15px;
+    border: 2px solid #007BFF; /* Adding a border */
+    border-left: none; /* Removing the left border to merge with the input */
+    border-radius: 0 15px 15px 0; /* Rounded corners on the right side */
+    background-color: #71a1d5;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #92abb7;
+    border-color: #004099;
+}
+
+.search-button img {
+    width: 20px; /* Adjust according to the size of the search icon you have */
+    height: 20px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #a76565;
+    color: black;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .logo img {
+        margin-left: 20px; /* Adjust logo margin for smaller screens */
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%; /* Make nav links full width */
+        gap: 0;
+    }
+
+    .nav-links a {
+        text-align: left; /* Align nav links to the left */
+        padding: 10px; /* Adjust padding for smaller screens */
+        border-radius: 0; /* Remove border radius */
+    }
+
+    .login-button {
+        justify-content: center;
+        width: 100%; /* Full width login button */
+        margin-top: 10px; /* Add some margin above the login button */
+    }
+
+    .main-content, .footer {
+        padding: 10px; /* Adjust padding for smaller devices */
+    }
+
+    .footer {
+        position: relative; /* Adjust footer position on small screens */
+    }
+}

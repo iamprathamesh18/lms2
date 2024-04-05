@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="sign.css">
+</head>
+<body>
+
+<div class="container">
+    <form class="login-form" id="loginForm" action="sign.php" method="POST">
+        <div class="form-content" id="studentForm">
+            <h2>👨‍🎓 Student Sign In</h2> <!-- Emoji for Student -->
+            <input type="text" name="username" placeholder="Username" class="login-input" required>
+            <select name="year" class="login-input" required>
+                <option value="">Select Year</option>
+                <option value="1">1st Year</option>
+                <option value="2">2nd Year</option>
+                <option value="3">3rd Year</option>
+                <option value="4">4th Year</option>
+            </select>
+            <input type="password" name="password" placeholder="Password" class="login-input" required>
+            <button type="submit" class="login-button">Sign In</button>
+            <hr class="separator">
+            <a href="sign.html" class="login-button sign-in-button">False Button</a>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

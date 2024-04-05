@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: relative;
+}
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.option-button {
+    border: none;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 20px; /* Rounded corners */
+}
+
+.option-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.login-form {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 375px; /* Adjusted height to accommodate additional elements */
+}
+
+.form-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form content */
+    
+}
+
+
+
+#adminForm, #studentForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#adminForm {
+    background-color: #e3f2fd;
+    transform: rotateY(0deg);
+}
+
+#studentForm {
+    background-color: #fff3e0;
+    transform: rotateY(-180deg);
+}
+
+.login-input, .login-button, .forgot-password, .separator, .sign-in-button {
+    width: 80%; /* Unified width for all inputs, buttons, and links */
+    margin: 10px 0;
+}
+
+.login-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s; /* Color transition on hover */
+}
+
+.login-input:hover {
+    border-color: #007bff; /* Change border color on hover */
+}
+
+.login-button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 10px; /* More curve */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #218838;
+}
+
+.forgot-password {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.separator {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.sign-in-button {
+    background-color: #ffc107; /* Yellow color for sign-in button */
+}
+
+.sign-in-button:hover {
+    background-color: #e0a800;
+}

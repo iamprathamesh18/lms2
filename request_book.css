@@ -1,0 +1,173 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header {
+    background-color: #005792;
+    color: #ffffff;
+    padding: 24px;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: 0 0px 0px rgba(0,0,0,0.1);
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    margin-left: 44px;
+    margin-top: 36px;
+}
+
+.nav-bar {
+    background: linear-gradient(90deg, #007acc 0%, #005792 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 10px;
+}
+
+.nav-links a:hover {
+    background-color: #e0e0e0;
+    color: #005792;
+    transform: translateY(-2px);
+}
+
+.login-button {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+    white-space: nowrap;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.login-button:hover {
+    background-color: #c33d2e;
+    transform: translateY(-2px);
+}
+
+.book-request-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 2rem auto 0; /* Increased top margin to move the form down */
+    padding: 20px; /* Add padding around the form content */
+    border: 3px solid; /* Default border style */
+    border-image: linear-gradient(45deg, #007bff, #28a745, #dc3545, #ffc107) 1; /* Colorful border */
+    border-radius: 10px; /* Rounded corners for the border */
+    transition: all 0.3s ease; /* Smooth transition for any changes */
+}
+
+.book-request-form:hover {
+    transform: translateY(-5px); /* Optional: slight lift effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: shadow effect for depth */
+}
+
+.book-request-form input[type="text"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff; /* Default background color */
+    transition: border-color 0.3s ease, background-color 0.3s ease; /* Transition effects */
+}
+
+.book-request-form input[type="text"]:hover {
+    border-color: #007bff; /* Border color changes on hover */
+    background-color: #e7f5ff; /* Background color changes on hover */
+}
+
+.book-request-form button {
+    margin-top: 20px; /* Increase top margin to move the button down */
+    padding: 10px 15px; /* Adjust padding as needed for size */
+    background-color: #007bff; /* Example background color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.book-request-form button:hover {
+    background-color: #0056b3; /* Darker shade on hover for visual feedback */
+}
+
+.main-content {
+    padding: 20px;
+    background-color: #ffffff;
+    min-height: 400px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #a76565;
+    color: black;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .logo img {
+        margin-left: 20px; /* Adjust logo margin for smaller screens */
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%; /* Make nav links full width */
+        gap: 0;
+    }
+
+    .nav-links a {
+        text-align: left; /* Align nav links to the left */
+        padding: 10px; /* Adjust padding for smaller screens */
+        border-radius: 0; /* Remove border radius */
+    }
+
+    .login-button {
+        justify-content: center;
+        width: 100%; /* Full width login button */
+        margin-top: 10px; /* Add some margin above the login button */
+    }
+
+    .main-content, .footer {
+        padding: 10px; /* Adjust padding for smaller devices */
+    }
+
+    .footer {
+        position: relative; /* Adjust footer position on small screens */
+    }
+}
